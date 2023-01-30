@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './Components/task/task.component';
 import { HomeComponent } from './Components/home/home.component';
-import { RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    RouterModule,
+    AppRoutingModule,
     HttpClientModule,
   ],
   providers: [],
